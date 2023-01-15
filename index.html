@@ -129,13 +129,65 @@
         color: #727272;
         margin-bottom: 30px;
        }
+       main{
+       display: flex;
+       grid-template-columns: repeat(2, 1fr);
+       column-gap: 10px;
+       }
+       .container-all{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+        background-color: white;
+        margin-top: 100px;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        
+       }
+       .image-container img{
+        width: 100%;
+        height: 95%;
+       
+        }
+       .contain-info{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 5px;
+        background-color: #FFFFFF;
+        border: 5px solid white;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        margin-left: 10px;
+        
+        
+       }
+       main{
+        width: 1100px;
+        height: 650px;
+       }
+       .contain-info p{
+        color: #727272;
+       }
+       .contain-info h3{
+        font-weight: 600;
+        font-size: 20px;
+       }
+       .contain-info h1{
+        font-weight: 700;
+        font-size: 30px;
+
+       }
+
+    
+       
  
 
        @media  screen and (max-width: 576px) {
 
         header{
-            background-color: #FFFFFF;
+            
             margin-left: 25px;
+            background-color: #FFFFFF;
             
         }
       
@@ -166,7 +218,7 @@
             width: 300px;
             
            }
-         .brand{
+        .brand{
         width: 600px;
         height: 200px;
         margin-top: 150px;
@@ -201,8 +253,25 @@
         width: 100%;
         margin-left: 50px;
        }
+       .contain-info{
+        height: 400px;
+        width: 280px;
+        margin-left: 10px;
+       }
 
-       
+       .container-all{
+        margin-left: 15px;
+       }
+       .container-all{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 1000px;
+       }
+
+        .image-container img{
+        width: 50%;
+        height: 50%;
+        margin-top: 500px;}
        
     }
 
@@ -261,6 +330,55 @@
 
             </div>
         </div>
+    </section>
+    <section>
+        <main>
+            <div class="container-all">
+
+                    
+
+                      
+                        
+
+                  <div class="contain-info">
+                    <div>
+                            <h1>Features you will love & enjoy</h1>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                        </div>
+                      
+
+                       
+                        <div>
+                            <h3>Dexktop & Mobile Version</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                        </div>
+                       
+                      
+                        <div>
+                            <h3>Drag & Drop Builder</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                        </div>
+                       
+                        <div>
+                            <h3>Awesome Modern Design</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                        </div>
+                       
+                        <div>
+                            <h3>Super Easy to Edit</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                       </div>
+                       
+                       
+                  </div>
+
+                <div class="image-container">
+                    <img src="images/architect.png" alt="">
+                    
+
+                </div>
+        </div>
+        </main>
     </section>
 </body>
 </html>
