@@ -104,6 +104,10 @@
         width: 300px;
         height: 300px;
        }
+       .contain-image img:hover{
+        transform: rotate(360deg);
+        transition: transform 0.5s ease;
+       }
        .contain-image{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -112,7 +116,8 @@
        }
        .contain-description{
         margin-left: 70px;
-        margin-top: 250px;
+        margin-top: 150px;
+
        }
        .contain-description h1{
         font-weight: 700;
@@ -127,7 +132,7 @@
        }
        .contain-description p{
         color: #727272;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
        }
        main{
        display: flex;
@@ -161,10 +166,6 @@
         
         
        }
-       main{
-        width: 1100px;
-        height: 650px;
-       }
        .contain-info p{
         color: #727272;
        }
@@ -177,6 +178,153 @@
         font-size: 30px;
 
        }
+       .middel-container{
+        margin-top: 100px;
+        margin-left: 20px;
+       }
+       .middel-container h1{
+        font-weight: 700;
+        font-size: 25px     
+
+        
+       }
+       .middel-container p{
+        color: #727272;
+        font-weight: 400;
+        font-size: 16px;
+
+       }
+       .icon-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        row-gap: 10px;
+        margin-top: 75px;
+        
+        
+       }
+       .box-1{
+        height: 180px;
+        width: 200px;
+        border: 1px solid #FF900E;
+        margin-left: 20px;
+        border-radius: 5px;
+       }
+       .baap{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 130px;
+        
+       }
+       .box-1:hover{
+        transform: rotate(360deg);
+        transition: transform 0.5s ease;
+
+
+       }
+       .box-1 img{
+        margin-left: 80px;
+        margin-top: 20px;
+        
+       }
+       .box-1 h1{
+        margin-left: 80px;
+        font-weight: 600;
+        font-size: 30px;
+       }
+       .box-1 p{
+        margin-left: 55px;
+        color: #727272;
+       }
+       .sponsar h1{
+        text-align: center;
+        margin-left: 200px;
+        margin-top: 100px;
+        font-weight: 700;
+        font-size: 30px;
+       }
+       .sponsar p{
+        margin-left: 200px;
+        color: #727272;
+       }
+       .icon{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        column-gap: 150px;
+        margin-top: 120px;
+       }
+       .icon img{
+        width: 100%;
+        height: 100%;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+         filter: grayscale(100%);
+       
+       }
+       .landing-page{
+        width: 1000px;
+        height: 70px;
+        background-color: #fff4e7e3;
+        margin-left: 100px;
+        margin-top: 130px;
+       }
+       .landing-page p{
+        margin-top: 100px;
+        text-align: center;
+        padding-top: 30px;
+        color: #424242;
+       }
+       .footer{
+        height: 300px;
+        width: 100%;
+        background-color: #d6c2c2;
+        margin-top: 100px;
+        border: 5px solid rgba(255, 144, 14, 0.1);
+        border-radius: 30px;
+       }
+       .footer{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       column-gap: 70px;
+        
+        
+       }
+       .footer-head{
+        margin-left: 20px;
+        margin-top: 100px;
+       }
+       .footer-subscribe{
+        margin-left: 150px;
+        margin-top: 100px;
+
+       }
+       .last-footer{
+        height: 300px;
+        width: 100%;
+        background-color: black;
+        margin-top: 50px;
+
+       }
+       .vertical{
+        border-left: 5px solid #FF900E;
+        height: 120px;
+        padding-bottom: 20px;
+        
+        
+       }
+       .vertical h1{
+
+        margin-left: 20px;
+
+       }
+       .vertical p{
+        margin-left: 20px;
+       }
+
+       
+
+    
+     
+
 
     
        
@@ -265,14 +413,15 @@
        .container-all{
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 1000px;
+       }
+       .mid{
+        margin-top: 400px;
+        margin-left: 20px;
+        display: flex;
+
+        
        }
 
-        .image-container img{
-        width: 50%;
-        height: 50%;
-        margin-top: 500px;}
-       
     }
 
     </style>
@@ -341,7 +490,7 @@
                         
 
                   <div class="contain-info">
-                    <div>
+                    <div class="vertical">
                             <h1>Features you will love & enjoy</h1>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
                         </div>
@@ -380,5 +529,103 @@
         </div>
         </main>
     </section>
+
+    <section>
+        <div class="middel-container">
+            <div class="mid">
+                <h1>Some Facts</h1>
+                <p >There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="icon-container">
+            <div class="baap">
+                <div class="box-1">
+                    <img src="images/icons/ribon.png" alt="">
+                    <h1>54</h1>
+                    <p>Awards Winnings</p>
+                </div>
+                <div class="box-1">
+                    <img src="images/icons/projects.png" alt="">
+                    <h1>1458</h1>
+                    <p>Project Finished</p>
+                </div>
+                <div class="box-1">
+                    <img src="images/icons/email.png" alt="">
+                    <h1>590</h1>
+                    <p>Clients Worked</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <main>
+            <div class="sponsar">
+                <div>
+                    <h1>Our Sponspors</h1>
+                </div>
+                <div>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section>
+        <main>
+            <div class="icon">
+                <div>
+                    <img src="images/sponsors/amazon.png" alt="">
+                </div>
+                <div>
+                    <img src="images/sponsors/figma.png" alt="">
+                </div>
+                <div>
+                    <img src="images/sponsors/google.png" alt="">
+                </div>
+                <div>
+                    <img src="images/sponsors/telerama.png" alt="">
+                </div>
+                <div>
+                    <img src="images/sponsors/spotify.png" alt="">
+                </div>
+            </div>
+        </main>
+    </section>
+    <section>
+        <div class="last-section">
+            <div class="landing-page">
+                <p class="ejhgf">All rights reserved copyright@2023 startup landing page design</p>
+    
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer-head">
+                <h1>
+                    Description
+                </h1>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
+                </p>
+            </div>
+            <div class="footer-subscribe">
+                <h1>
+             Subscribe
+                </h1>
+                <button>
+             Click Here
+                </button>
+
+            </div>
+
+        </div>
+    </footer>
+    <footer>
+        <div class="last-footer">
+
+        </div>
+    </footer>
 </body>
 </html>
