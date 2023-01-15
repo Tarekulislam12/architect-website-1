@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architects website</title>
     <style>
+        /* bodey style */
         body{
             max-width: 1100px;
             margin: 0 auto;
         }
+        /* header-part-style start */
         header{
             height: 1150px;
             background: rgba(255, 144, 14, 0.1);
@@ -46,6 +48,8 @@
             margin-right: 100px;
             margin-top: 40px;
         }
+
+
        .brand{
         width: 650px;
         height: 200px;
@@ -87,7 +91,9 @@
         background-size: cover;
         justify-content: center;
         
-        
+        /* header part style stop */
+
+        /* first sections style start */
 
        }
        .banner-image img{
@@ -106,7 +112,7 @@
        }
        .contain-image img:hover{
         transform: rotate(360deg);
-        transition: transform 0.5s ease;
+        transition: transform 2s ease;
        }
        .contain-image{
         display: grid;
@@ -154,6 +160,9 @@
         height: 95%;
        
         }
+        /* fisrt section style stop */
+
+        /* second part style start */
        .contain-info{
         display: grid;
         grid-template-rows: repeat(4, 1fr);
@@ -200,9 +209,34 @@
         justify-content: space-around;
         row-gap: 10px;
         margin-top: 75px;
+
+        /* second part style stop */
+
+        /* third part style start */
         
         
        }
+       .vertical{
+        border-left: 5px solid #FF900E;
+        height: 120px;
+        padding-bottom: 20px;
+        
+        
+       }
+       .vertical h1{
+
+        margin-left: 20px;
+
+       }
+       .vertical p{
+        margin-left: 20px;
+       }
+
+    .buy{
+        text-align: center;
+        margin-right:400px ;
+        
+    }
        .box-1{
         height: 180px;
         width: 200px;
@@ -236,6 +270,9 @@
         margin-left: 55px;
         color: #727272;
        }
+       /* third part style stop */
+
+       /* 4rth part style start */
        .sponsar h1{
         text-align: center;
         margin-left: 200px;
@@ -273,6 +310,9 @@
         padding-top: 30px;
         color: #424242;
        }
+       /* fourth part style stop */
+
+       /* secondary footer part style start */
        .footer{
         height: 300px;
         width: 100%;
@@ -297,6 +337,9 @@
         margin-top: 100px;
 
        }
+       /* secondary footer style stop */
+
+       /* main footer style start */
        .last-footer{
         height: 300px;
         width: 100%;
@@ -304,21 +347,9 @@
         margin-top: 50px;
 
        }
-       .vertical{
-        border-left: 5px solid #FF900E;
-        height: 120px;
-        padding-bottom: 20px;
-        
-        
-       }
-       .vertical h1{
+       /* main footer style stop */
 
-        margin-left: 20px;
-
-       }
-       .vertical p{
-        margin-left: 20px;
-       }
+       
 
        
 
@@ -336,7 +367,11 @@
             
             margin-left: 25px;
             background-color: #FFFFFF;
+            width: 100%;
             
+        }
+        *{
+            max-width: 800px;
         }
       
         .main.header{
@@ -406,6 +441,13 @@
         width: 280px;
         margin-left: 10px;
        }
+       .baap{
+       display: flex;
+       flex-direction: column;
+       height: 100px;
+       
+    }
+    
 
        .container-all{
         margin-left: 15px;
@@ -417,10 +459,72 @@
        .mid{
         margin-top: 400px;
         margin-left: 20px;
-        display: flex;
+        
 
         
        }
+       .footer{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        margin-right: 10px;
+        padding-right: 80px;
+
+       }
+       .sponsar{
+        height: 300px;
+        margin-top: 450px;
+        margin-right: 200px;
+        padding-right: 300px;
+       }
+       .sponsar p{
+        margin-left: 10px;
+       }
+
+       .footer-subscribe{
+        margin-right: 200px;
+       
+       }
+       .destop{
+        margin-top: 100px;
+       }
+       .box-1{
+        margin-top: 12px;
+        margin-bottom: 12px;
+       }
+       .landing-page{
+        margin-left: 10px;
+        width: 355px;
+       }
+       .mid{
+        margin-top: 450px;
+       }
+       .last-footer{
+        width: 700px;
+       }
+       .icon{
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+        margin-left: 50px;
+        
+       }
+    .main{
+        margin-left: 100px;
+    }
+    .icon img{
+        width:50%;
+        height: 50%;
+        padding: 10px;
+    }
+    .sponse-title{
+        margin-left:0 ;
+    }
+    .image-container img {
+    width: 63%;
+    height: 95%;}
+    
+
 
     }
 
@@ -497,7 +601,7 @@
                       
 
                        
-                        <div>
+                        <div class="destop">
                             <h3>Dexktop & Mobile Version</h3>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
                         </div>
@@ -523,12 +627,14 @@
 
                 <div class="image-container">
                     <img src="images/architect.png" alt="">
+                    <div class="buy"><Button><h1>10+ Years</h1> <br>experience </Button></div>
                     
 
                 </div>
         </div>
         </main>
     </section>
+   
 
     <section>
         <div class="middel-container">
@@ -562,7 +668,7 @@
     <section>
         <main>
             <div class="sponsar">
-                <div>
+                <div class="sponse-title">
                     <h1>Our Sponspors</h1>
                 </div>
                 <div>
